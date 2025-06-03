@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Fonts -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="NSS, National Service Scheme, CSIT College, Community Service, Volunteer, Social Work, Student Activities, Blood Donation, Cleanliness Drive, Plantation, Youth, India, College Events, Social Responsibility">
+  <meta name="description" content="Join the National Service Scheme (NSS) at CSIT College, Durg. Participate in community service, social activities, and personal development programs. Become a volunteer and make a difference!">
   <title>National Service Scheme - CSIT College</title>
-  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/owlcarosolstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
@@ -354,6 +354,89 @@
     </div>
   </section>
 
+  
+<!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">What Our Volunteers Say</h2>
+            <div class="heading-underline"></div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-10 mx-auto">
+            <div class="owl-carousel owl-theme" id="volunteerCarousel">
+              <!-- Testimonial Items -->
+              <div class="item">
+                <div class="testimonial-card text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Volunteer 1"
+                    class="testimonial-img rounded-circle mb-3"
+                  />
+                  <h4 class="mb-1">Amit Sharma</h4>
+                  <p class="text-muted mb-2">CSE, 3rd Year</p>
+                  <p class="testimonial-text">
+                    "NSS has helped me grow as a person and given me the
+                    opportunity to serve my community."
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-card text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Volunteer 2"
+                    class="testimonial-img rounded-circle mb-3"
+                  />
+                  <h4 class="mb-1">Priya Verma</h4>
+                  <p class="text-muted mb-2">ECE, 2nd Year</p>
+                  <p class="testimonial-text">
+                    "Being a part of NSS has taught me leadership and teamwork.
+                    Every activity brings joy."
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-card text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/54.jpg"
+                    alt="Volunteer 3"
+                    class="testimonial-img rounded-circle mb-3"
+                  />
+                  <h4 class="mb-1">Rahul Singh</h4>
+                  <p class="text-muted mb-2">IT, Final Year</p>
+                  <p class="testimonial-text">
+                    "NSS gave me a platform to make a real difference. The
+                    memories I've gained will stay forever."
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-card text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt="Volunteer 4"
+                    class="testimonial-img rounded-circle mb-3"
+                  />
+                  <h4 class="mb-1">Sneha Patel</h4>
+                  <p class="text-muted mb-2">ME, 1st Year</p>
+                  <p class="testimonial-text">
+                    "Joining NSS was the best decision of my college life. It
+                    feels great to contribute to society."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
   <!-- Join NSS Section -->
   <section id="join" class="section-padding">
     <div class="container">
@@ -544,9 +627,34 @@
   <!-- Back to Top Button -->
   <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
 
-  <!-- Bootstrap 5 JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
   <script src="js/script.js"></script>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#volunteerCarousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            992: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
 </body>
 </html>
